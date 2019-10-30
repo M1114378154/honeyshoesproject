@@ -1,0 +1,12 @@
+.container {
+    background-color: aqua;
+}
+
+.container .Personal-top {
+    display: inline;
+}
+
+
+/* .container .Personal-top .Personal-right {
+    float: right;
+} */
