@@ -18,7 +18,7 @@ input, button {
 	max-width:525px;
 	min-height:670px;
 	position:relative;
-	background:url(../Img/honey.jpg) no-repeat center;
+	background:url(../Img/honey-1.png) no-repeat center;
 	box-shadow:0 12px 15px 0 rgba(241, 240, 240, 0.24),0 17px 50px 0 rgba(255, 254, 254, 0.19);
 }
 .login-html{
