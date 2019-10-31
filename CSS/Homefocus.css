@@ -110,11 +110,11 @@
     color:black;
   }
   .bottom-foon span{
-    padding-left: 60px;
+    padding-left: 70px;
   }
   .Give{
     height: 20px;
-    padding-right: 30px;
+     /* padding-right: 30px; */
   }
 /* .jumbotron {
     padding-top: 30px;
