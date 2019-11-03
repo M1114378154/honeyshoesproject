@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>购买推荐</title>
+    <link rel="stylesheet" href="../CSS/weui.css" />
+    <link rel="stylesheet" href="../CSS/weuix.css" />
+    <link rel="stylesheet" href="../CSS/common.css" />
+
+    <script src="../jquery/zepto.min.js"></script>
+    <script src="../jquery/zepto.weui.js"></script>
+    <script src="../jquery/swipe.js"></script>
+
+    <script>
+        $(function () {
+            $('#t5').tab({ defaultIndex: 0, activeClass: "bg-red" });
+        });
+        $(function () {
+            $('#slide1').swipeSlide({
+                autoSwipe: true,//自动切换默认是
+                speed: 3000,//速度默认4000
+                continuousScroll: true,//默认否
+                transitionType: 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',//过渡动画linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier
+                lazyLoad: true,//懒加载默认否
+                firstCallback: function (i, sum, me) {
+                    me.find('.dot').children().first().addClass('cur');
+                },
+                callback: function (i, sum, me) {
+                    me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+                }
+            });
+        });
+    </script>
+    <style>
+        #slide1 {
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="weui-tab" style="height:44px;" id="t5">
+        <div class="weui-tab-nav"> <a href="javascript:" class="weui-navbar__item weui-nav-red"> 推荐 </a> <a
+                href="javascript:" class="weui-navbar__item weui-nav-red"> 新品 </a> <a href="javascript:"
+                class="weui-navbar__item weui-nav-red"> 今日爆款 </a><a href="javascript:"
+                class="weui-navbar__item weui-nav-red"> 品牌 </a> </div>
+    </div>
+    <div class="weui-search-bar" id="searchBar">
+        <form class="weui-search-bar__form" action="#">
+            <div class="weui-search-bar__box">
+                <i class="weui-icon-search"></i>
+                <input class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="" type="search">
+                <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+            </div>
+            <label class="weui-search-bar__label" id="searchText"
+                style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+                <i class="weui-icon-search"></i>
+                <span>预购开启</span>
+            </label>
+        </form>
+        <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+    </div>
+    <!-- 轮播图 -->
+    <div class="slide" id="slide1">
+        <ul>
+            <li>
+                <a href="javascript:;">
+                    <img src='../Img/shoes.jpg' alt="">
+                </a>
+                <div class="slide-desc">帆布鞋</div>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src='../Img/vans.jpg' alt="">
+                </a>
+                <div class="slide-desc">Vans</div>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src='../Img/new.jpg' alt="">
+                </a>
+                <div class="slide-desc">New</div>
+            </li>
+        </ul>
+        <div class="dot">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+<!-- 全新正品 -->
+    <div id="main0">
+        <div id="main0_l">
+            <img id="img0" src="../Img/全新正品.png" />
+        </div>
+        <div id="main0_r">
+            <div id="list_h3">
+                <ul>
+                    <li><h3>鉴别服务</h3></li>
+                    <li><h3>全新正品</h3></li>
+                </ul>
+            </div>
+            <div id="list_h4">
+                <ul>
+                    <li>正品保障</li>
+                    <li>逐渐查验</li>
+                    <li>多重鉴别</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- 原价购 -->
+    <div id="main1">
+        <div class="weui-flex">
+             <div class="weui-flex__item">
+                   <!-- 修改过 -->
+                <div class="placeholder1 main1">
+                  <div id="L">
+                      <h4>原价购</h4>
+                      <div id="L_sty">
+                          <span class="siz">限量5双</span>
+                      </div>
+                  </div>
+                  <div id="R">
+                      <h5>Sacai nike LDV Waffle</h5>
+                      <h6>￥1299</h6>
+                  </div>
+                </div>
+             </div>
+            <div class="weui-flex__item">
+                <div class="placeholder">
+                    <div class="img-box">
+                       <img src="../Img/耐克.png">
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+<!-- 砍价 -->
+    <div class="weui-flex main2">
+        <div class="weui-flex__item">
+            <div class="placeholder">
+                <div id="main2_l">
+                    <h4>砍价</h4>
+                    <h5>￥500</h5>
+                </div>
+                <div id="main2_r">
+                    <div class="img-box">
+                         <img src="../Img/vans.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-flex__item">
+            <div class="placeholder main2_m">
+                <div id="main2_l">
+                    <h4>抽奖</h4>
+                    <h5>￥0</h5>
+                </div>
+                <div id="main2_r">
+                    <div class="img-box">
+                         <img src="../Img/1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 最新 -->
+    <div id="main3">
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <div class="placeholder">
+                    <div class="img-box">
+                       <img id="main3_img1" src="../Img/shoes.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="weui-flex__item">
+                <div class="placeholder">
+                    <div class="img-box">
+                       <img id="main3_img2" src="../Img/new.jpg">
+                    </div>
+                    <div id="main3_txt">
+                        <span>[专栏] 穿搭/每日开箱挑战.....</span>
+                        <ul>
+                            <li>￥1233</li>
+                            <li>99+付款</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
