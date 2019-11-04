@@ -37,17 +37,17 @@
     padding: 20px; 
 }
   .left{
-    width: 40%;
+    width: 38%;
     position: relative;
     float: left;
-    left: 10px;
+    left: 60px;
     top: 20px;
   }
   .right{
-    width: 40%;
+    width: 38%;
     position: relative;
     float: right;
-    right: 10px;
+    right: 60px;
     top: 20px;
   
   }
@@ -68,20 +68,20 @@
     border: 2px solid #101010;
     height: 50px;
     position: relative;
-    left: 65px;
+    left: 110px;
     top: 10px;
   }
   .Middle-right{
     position: relative;
     float: right;
-    padding-right: 75px;
+    padding-right: 120px;
     top: 25px;
     color:black;
     /* font-size: 18px; */
   }
   .Middle-top{
     float:left;
-    margin-left: 70px;
+    margin-left: 120px;
     margin-top: 10px;
     /* font-size: 25px; */
   }
@@ -102,17 +102,18 @@
   .bottom span{
     font-size: 16px;
     position: relative;
-    top: -20px;
-    padding-left: 550px;
+    top: -50px;
+    padding-left: 110px;
   }
   .bottom-foon{
     width: 100%;
     color:black;
   }
   .bottom-foon span{
-    padding-left: 70px;
+    padding-left: 110px;
   }
   .Give{
     height: 20px;
-     /* padding-right: 30px; */
+     padding-right:110px;
+     /* padding-left: 1px; */
   }
