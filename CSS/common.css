@@ -32,7 +32,7 @@
 	float: left;
 }
 #img0{
-	height: 50px;
+	height: 85px;
 	padding-left: 30px;
 }
 #main0_r{
@@ -40,16 +40,17 @@
 }
 #list_h3 ul li{
 	float: left;
-	padding-left: 15px;
+	padding-left: 50px;
+	font-size: 30px;
 }
 #list_h4 ul{
 	margin-left: -20px;
 }
 #list_h4 ul li{
 	float: left;
-	padding-left: 40px;
+	padding-left: 70px;
 	font-weight: 100;
-	font-size: 14px;
+	font-size: 20px;
 }
 #weui-flex{
 	width: 100%;
@@ -58,7 +59,7 @@
 }
 /*  */
 #main1{
-	margin-top: 40px;
+	margin-top: 60px;
 	visibility: visible;
 }
 .main1{
@@ -66,8 +67,9 @@
 }
 #L{
 	float: left;
-	padding-left: 35px;
+	padding-left: 156px;
 	text-align: center;
+	font-size: 25px;
 }
 #R{
 	float: left;
@@ -77,29 +79,30 @@
 }
 #L_sty{
 	background-color: #000000;
-	width: 80px;
+	width: 85px;
 	text-align: center;
 	
 }
 .siz{
 	color: #F7F7F8;
-	font-size: 10px;
+	font-size: 15px;
 	
 }
 #R h5{
-	font-size: 14px;
+	font-size: 25px;
 	margin-top: 2px;
 	margin-left: 10px;
 }
 #R h6{
 	margin-top: 10px;
 	margin-left: 10px;
+	font-size: 18px;
 }
 .img-box img{
-	height: 60px;
+	height: 100px;
 	width: 200px;
 	float: right;
-	padding-right: 36px;
+	padding-right: 170px;
 }
 /*  */
 .main2{
@@ -111,7 +114,7 @@
 }
 #main2_l{
 	float: left;
-	padding-left: 35px;
+	padding-left: 100px;
 }
 #main2_l h5{
 	margin-top: 20px;
@@ -131,14 +134,15 @@
 	margin-top: 40px;
 }
 #main3_img1{
-	height: 250px;
-	width: 80%;
+	height: 350px;
+	width: 65%;
+	padding-right: 85px;
 }
 #main3_img2{
 	height: 200px;
-	width: 80%;
+	width: 73%;
 	position: relative;
-	left: -20px;
+	/* left: -20px; */
 }
 #main3 span{
 	width: 100%;
@@ -146,7 +150,8 @@
 #main3_txt{
 	position: absolute;
 	margin-top: 200px;
-	padding-left: 77px;
+	padding-left: 1px;
+	/* padding-right: 10px; */
 	font-size: 14px;
 	color: #999999;
 }
@@ -211,7 +216,7 @@
 	height: 450px;
 	width: 80%;
 	position: relative;
-	left: -110px;
+	left: 40px;
 	padding-bottom: 120px;
 }
 #bot{
