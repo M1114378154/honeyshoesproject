@@ -21,13 +21,60 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="./Register.html">登录</a>
+
+        <!-- Links -->
+
+        <ul class="navbar-nav">
+            <!-- 首页 -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="../index.html" id="navbardrop" data-toggle="dropdown">
+                  首页
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./Homefocus.html">关注</a>
+                    <a class="dropdown-item" href="#">最新</a>
+                </div>
+            </li>
+            <!-- 购买 -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./Buy.html" id="navbardrop" data-toggle="dropdown">
+                  购买
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./ShopNew.html">新品</a>
+                    <a class="dropdown-item" href="./Explosive.html">今日爆款</a>
+                    <a class="dropdown-item" href="#">品牌</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./Service.html">服务</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./Personal.html">个人中心</a>
+            </li>
+
+        </ul>
+    </nav>
+
     <div class="container">
         <div class="container-fluid">
-            <!-- <div class="row">
-                <input type="text" placeholder="搜索..">
-            </div> -->
+            <div class="input-group mb-3" style="padding: 3%;">
+                <input type="text" class="form-control" placeholder="Sacai x Nike LDV Waffle">
+                <div>
+                    <!-- <p class="classP">分类</p> -->
+                    <svg t="1572853765859" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3337" width="25" height="25">
+                          <path
+                            d="M164.3 206.4c-29.8 0-54 24.2-54 54s24.2 54 54 54 54-24.2 54-54-24.2-54-54-54z m188.9 94h525c20.7 0 37.5-17.9 37.5-40s-16.8-40-37.5-40h-525c-20.7 0-37.5 17.9-37.5 40s16.8 40 37.5 40zM164.3 459.2c-29.8 0-54 24.2-54 54s24.2 54 54 54 54-24.2 54-54-24.2-54-54-54z m713.9 14h-525c-20.7 0-37.5 17.9-37.5 40s16.8 40 37.5 40h525c20.7 0 37.5-17.9 37.5-40s-16.8-40-37.5-40zM164.3 712c-29.8 0-54 24.2-54 54s24.2 54 54 54 54-24.2 54-54-24.2-54-54-54z m713.9 14h-525c-20.7 0-37.5 17.9-37.5 40s16.8 40 37.5 40h525c20.7 0 37.5-17.9 37.5-40s-16.8-40-37.5-40z"
+                            fill="#1296db" p-id="3338"></path>
+                        </svg>
+                    <p class="classP">分类</p>
+                </div>
+            </div>
             <!-- 图片区 -->
-            <div class="row" style="padding: 3%;">
+            <div class="row" style="padding: 1%;">
                 <div class="col-sm-3">
                     <center>
                         <img src="../Img/honey.jpg" style="width: 200px; height: 200px ">
@@ -148,5 +195,25 @@
     
     .container {
         background-color: rgba(255, 205, 253, 0.9);
+    }
+    
+    .input-group {
+        width: 80%;
+        margin-left: 9%;
+    }
+    
+    svg {
+        margin-left: 15px;
+        margin-top: 0%;
+    }
+    
+    .classP {
+        /* margin-top: 21px; */
+        margin-bottom: 0rem;
+        /* margin-left: 19px; */
+        margin-left: 15px;
+        color: #1296db;
+        font-size: 14px;
+        /* margin-right: -2.7%; */
     }
 </style>
