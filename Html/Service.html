@@ -1,90 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>服务页面</title>
     <link rel="stylesheet" href="../CSS/weui.css" />
     <link rel="stylesheet" href="../CSS/weuix.css" />
     <link rel="stylesheet" href="../CSS/common.css" />
-    
+
     <script src="../jquery/zepto.min.js"></script>
     <script src="../jquery/zepto.weui.js"></script>
     <script>
-        $(function(){
+        $(function() {
             $('.weui-tab').tab({
                 defaultIndex: 0,
                 activeClass: 'weui-bar__item_on',
-                onToggle: function (index) {
-                       console.log(index)
+                onToggle: function(index) {
+                    console.log(index)
                 }
             })
         });
-   
     </script>
 </head>
+
 <body>
-<div class="container">
-<div class="weui-tab" style="height:auto;">   
-	<div class="weui-tab__panel">       
-        <div id="c0" class="weui-tab__content">          
-            <div class="weui-flex">
-                <div class="weui-flex__item">
-                    <div class="placeholder top">
-                        <div id="top_img">
-                            <img src="../Img/达人问答.png" />
+    <div class="container">
+        <div class="weui-tab" style="height:auto;">
+            <div class="weui-tab__panel">
+                <div id="c0" class="weui-tab__content">
+                    <div class="weui-flex">
+                        <div class="weui-flex__item">
+                            <div class="placeholder top">
+                                <div id="top_img">
+                                    <img src="../Img/达人问答.png" />
+                                </div>
+                                达人问答
+                            </div>
                         </div>
-                        达人问答
-                    </div>
-                </div>
-                <div class="weui-flex__item">
-                    <div class="placeholder">
-                    <div id="top_img">
-                        <img src="../Img/发表日历.png" />
-                    </div>
-                    发售日历
-                    </div>
-                </div>
-                <div class="weui-flex__item">
-                    <div class="placeholder">
-                        <div id="top_img">
-                            <img src="../Img/免费鉴别.png" />
+                        <div class="weui-flex__item">
+                            <div class="placeholder">
+                                <div id="top_img">
+                                    <img src="../Img/发表日历.png" />
+                                </div>
+                                发售日历
+                            </div>
                         </div>
-                        免费鉴别
+                        <div class="weui-flex__item">
+                            <div class="placeholder">
+                                <div id="top_img">
+                                    <img src="../Img/免费鉴别.png" />
+                                </div>
+                                免费鉴别
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border  w">
+                        <div id="part1">
+                            <div id="part1_l">
+                                <h2>鉴别服务</h2>
+                                <h4>27,420,221</h4>
+                                <h4>累计鉴别数已超过</h4>
+                            </div>
+                            <div id="part1_r">
+                                <img src="../Img/鉴别服务.png" />
+                            </div>
+                        </div>
+                        <div id="part2">
+                            <a href="javascript:;" class="weui-btn bg-blue">免费鉴别</a>
+                        </div>
+                    </div>
+
+                    <h2 style="margin-left: 25px;margin: 30px 130px 10px;">最新资讯</h2>
+                    <div id="bott">
+                        <div class="img-box" style="padding-lfte: 100px;">
+                            <img id="BigDiagram" src="../Img/3.png">
+                        </div>
+                    </div>
+                    <div id="bot">
+                        <span>"20th.Anniversary"周年纪念联名版即将发售</span>
+                        <h6>2小时</h6>
                     </div>
                 </div>
-            </div>
-            
-            <div  class="border  w" >
-                <div id="part1">
-                    <div id="part1_l">
-                        <h2>鉴别服务</h2>
-                        <h4>27,420,221</h4>
-                        <h4>累计鉴别数已超过</h4>
-                    </div>
-                    <div id="part1_r">
-                        <img src="../Img/鉴别服务.png" />
-                    </div>
-                </div>
-                <div id="part2">
-                    <a href="javascript:;" class="weui-btn bg-blue">免费鉴别</a>
-                </div>
-            </div>
-            
-            <h2 style="margin-left: 25px;margin: 30px 130px 10px;">最新资讯</h2>
-            <div id="bott">
-                <div class="img-box"style="padding-lfte: 100px;">
-                   <img id="BigDiagram" src="../Img/3.png">
-                </div>
-            </div>
-            <div id="bot">
-                <span>"20th.Anniversary"周年纪念联名版即将发售</span>
-                <h6>2小时</h6>
             </div>
         </div>
     </div>
-    </div>
-</div> 
 
 
 </body>
+
 </html>
