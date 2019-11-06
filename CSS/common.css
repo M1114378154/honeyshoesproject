@@ -33,18 +33,18 @@
 }
 #img0{
 	height: 85px;
-	padding-left: 30px;
+	padding-left: 25px;
 }
 #main0_r{
 	float: left;
 }
 #list_h3 ul li{
 	float: left;
-	padding-left: 50px;
+	padding-left: 40px;
 	font-size: 30px;
 }
 #list_h4 ul{
-	margin-left: -20px;
+	margin-left: -30px;
 }
 #list_h4 ul li{
 	float: left;
@@ -67,7 +67,7 @@
 }
 #L{
 	float: left;
-	padding-left: 156px;
+	padding-left: 140px;
 	text-align: center;
 	font-size: 25px;
 }
@@ -102,7 +102,7 @@
 	height: 100px;
 	width: 200px;
 	float: right;
-	padding-right: 170px;
+	padding-right: 150px;
 }
 /*  */
 .main2{
@@ -114,7 +114,7 @@
 }
 #main2_l{
 	float: left;
-	padding-left: 100px;
+	padding-left: 50px;
 }
 #main2_l h5{
 	margin-top: 20px;
@@ -125,8 +125,8 @@
 }
 #main2_r img{
 	width: 350px;
-	height: 250px;
-	padding-left: 15px;
+	height: 200px;
+	padding-left: 10px;
 }
 /*  */
 #main3{
@@ -136,7 +136,7 @@
 #main3_img1{
 	height: 350px;
 	width: 65%;
-	padding-right: 85px;
+	padding-right: 115px;
 }
 #main3_img2{
 	height: 200px;

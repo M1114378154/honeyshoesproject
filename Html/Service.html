@@ -4,27 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <title>服务页面</title>
-    <link rel="stylesheet" href="../CSS/weui.css" />
-    <link rel="stylesheet" href="../CSS/weuix.css" />
-    <link rel="stylesheet" href="../CSS/common.css" />
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+		<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+		
+		<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <script src="../jquery/zepto.min.js"></script>
-    <script src="../jquery/zepto.weui.js"></script>
-    <script>
-        $(function() {
-            $('.weui-tab').tab({
-                defaultIndex: 0,
-                activeClass: 'weui-bar__item_on',
-                onToggle: function(index) {
-                    console.log(index)
-                }
-            })
-        });
-    </script>
+<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body
+		{
+		  background-color:#d3cbf8;
+		}
+		.container{
+			background-color: rgba(255, 205, 253, 0.9);
+		}
+		#sv_top{
+			height: 110px;
+			visibility: visible;
+		}
+		#sv_top_L{
+			float: left;
+		}
+		#sv_top_L img{
+			height: 60px;
+		}
+		#sv_top_C{
+			float: left;
+			position: relative;
+			left: 50%;
+			margin-left: -70px;
+		}
+		#sv_top_C img{
+			height: 60px;
+		}
+		#sv_top_R{
+			float: right;
+			margin-left: 30px;
+		}
+		#sv_top_R img{
+			height: 60px;
+		}
+		.btn-primary{
+			position: relative;
+			left: 30%;
+			top: 60px;
+		}
+		.jumbotron{
+			background-color: rgba(255, 205, 253, 0.9);
+			border: 1px solid #000000;
+		}
+		#jumbotron_txt{
+			visibility: visible;
+			height: 80px;
+		}
+		#jumbotron_L{
+			float: left;
+		}
+		#jumbotron_R{
+			float: right;
+		}
+		#jumbotron_R img{
+			height: 100px;
+		}
+		#but{
+			margin-top: -20px;
+		}
+		#but img{
+			width: 100%;
+			height: 400px;
+		}
+	</style>
 </head>
 
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <div class="weui-tab" style="height:auto;">
             <div class="weui-tab__panel">
                 <div id="c0" class="weui-tab__content" style="display: block; opacity: 1;">
@@ -121,8 +183,81 @@
                 </div>
             </div>
         </div>
-    </div>
-
+    </div> -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="./Register.html">登录</a>
+    
+            <!-- Links -->
+    
+            <ul class="navbar-nav">
+                <!-- 首页 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../index.html" id="navbardrop" data-toggle="dropdown">
+                      首页
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./Homefocus.html">关注</a>
+                        <a class="dropdown-item" href="#">最新</a>
+                    </div>
+                </li>
+                <!-- 购买 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./Buy.html" id="navbardrop" data-toggle="dropdown">
+                      购买
+                    </a>
+                    <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./Buy.html">推荐</a>
+                        <a class="dropdown-item" href="./ShopNew.html">新品</a>
+                        <a class="dropdown-item" href="./Explosive.html">今日爆款</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Service.html">服务</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Personal.html">个人中心</a>
+                </li>
+    
+            </ul>
+        </nav>
+	<div class="container">
+			<div id="sv_top">
+				<div id="sv_top_L">
+					<img src="../Img/达人问答.png" />
+					<h6>达人问答</h6>
+				</div>
+				<div id="sv_top_C">
+					<img src="../Img/发表日历.png" />
+					<h6>发售日历</h6>
+				</div>
+				<div id="sv_top_R">
+					<img src="../Img/免费鉴别.png" />
+					<h6>免费鉴别</h6>
+				</div>
+			</div>
+			<div>
+				<div class="jumbotron">
+					<div id="jumbotron_txt">
+						<div id="jumbotron_L">
+						  <h3>鉴别服务</h3>
+						  <h5>27,420,221</h5>
+						  <h5>累计鉴别数已超过</h5>
+						</div>
+						<div id="jumbotron_R">
+							<img src="../Img/鉴别服务.png" />			  
+						</div>
+					</div>
+				  <p><a class="btn btn-primary" href="#" role="button">免费鉴别</a></p>
+				</div>
+			</div>
+			<div id="but">
+				<h4>最新资讯</h4>
+				<img src="../Img/3.png" />
+				<span>"20th.Anniversary"周年纪念联名版即将发售</span>
+				<h6>2小时</h6>
+			</div>
+		</div>
 </body>
 
 </html>
