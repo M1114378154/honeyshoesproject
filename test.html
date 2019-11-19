@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script src="./JS/shoppingCart.js"></script>
+    <script>
+        //创建购物车操作对象
+         var cart = new ShoppingCart();
+         cart.clearCart();
+        //商品
+        var product = new Product('01', '鸟巢', '01.jpg', 90.00);
+        //订单
+        var order = new Order(product, 3, true);
+        cart.addToCart(order);
+
+        // var title = order.title;
+        // console.log(title);
+        //购物车数据
+        // var cartData = new CartData();
+        //将订单加入购物车
+        // cartData.orderList.push(order);
+        // cartData.totalQty = order.qty;
+        // cartData.totalAmount = order.price * order.qty;
+        // cartData.units =1;
+
+
+
+
+        //将购物车数据写入本地存储
+        // cart.setDataToLocalSatorge(cartData);
+        //将订单order放入到购物车里
+
+        //又创建一个商品
+        product = new Product("02", "牛奶", "02.jpg", 10.00);
+        //又创建一个订单
+        order = new Order(product, 6, true);
+        //将订单order放入到购物车里
+        cart.addToCart(order);
+
+
+        //又创建一个商品
+        product = new Product("03", "水果", "03.jpg",20.00);
+        //又创建一个订单
+        order = new Order(product, 2, true);
+        //将订单order放入到购物车里
+        cart.addToCart(order);
+
+        //将购物车数据读出来显示控制台
+        console.log(cart.getDataFromLocalStorage());
+        console.log(cart.getSelectedQty());
+        console.log(cart.getSelectedAmount());
+
+        //cart.setItemSelectStatus('03', true);
+        // console.log(cart.getSelectedQty());
+        // console.log(cart.getSelectedAmount());
+
+       cart.changeQty("02",'+') ;
+
+
+
+        cart.deleteItem('03');
+
+
+    </script>
+
+</body>
+
+</html>

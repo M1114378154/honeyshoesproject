@@ -5,96 +5,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页关注</title>
-      <!-- Bootstrap -->
-    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../CSS/Homefocus.css">
-    <style>
-        .container {
-        background-color: rgba(255, 205, 253, 0.9);
-    }
-    </style>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>关注</title>
 </head>
 
-
 <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="./Register.html">登录</a>
+
+        <!-- Links -->
+
+        <ul class="navbar-nav">
+            <!-- 首页 -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="../index.html" id="navbardrop" data-toggle="dropdown">
+                    首页
+                </a>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../index.html">推荐</a>
+                    <a class="dropdown-item" href="./Homefocus.html">关注</a>
+                    <a class="dropdown-item" href="./Newest.html">最新</a>
+                </div>
+            </li>
+            <!-- 购买 -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./Recommend.html" id="navbardrop" data-toggle="dropdown">
+                    购买
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./Recommend.html">推荐</a>
+                    <a class="dropdown-item" href="./ShopNew.html">新品</a>
+                    <a class="dropdown-item" href="./Explosive.html">今日爆款</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./Service.html">服务</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./Personal.html">个人中心</a>
+            </li>
+
+        </ul>
+    </nav>
+    <br>
     <div class="container">
-    <!-- <div class="main"> -->
-      <!-- 顶部 -->
-      <!-- <div class="main-head row">
-        <div class="col-md-2 fl"><img src="../Img/搜索.png" alt="...."></div>
-        <div class="col-md-3 fl">关注</div>
-        <div class="col-md-2 fl">推荐</div>
-        <div class="col-md-2 fl">最新</div>
-        <div class="col-md-3 fl"><img src="../Img/相机.png" alt="...."></div>
-      </div> -->
-<!-- 头部 -->
+        <div class="container-fluid">
+            <!-- 头部关注 -->
+            <div class="row">
+                <div class="col-sm-7" style="margin-top: 3%;margin-left: 1.5%;">
 
-<div class="neck">
-    <div class="left">
-          <div class="thumbnail">
-            <img src="../Img/2.png" alt="...">
+                    <div class="card" style="width:400px">
+                        <center>
+                            <img class="card-img-top" src="../Img/img_avatar.png" alt="Card image"
+                                style="width:50%;margin-top: 3%;"></center>
+                        <div class="card-body">
+                            <center>
+                                <h4 class="card-title">Honey</h4>
+                                <p class="card-text">穿搭达人</p>
+                                <a href="#" class="btn btn-primary">+关注</a>
+                            </center>
+                        </div>
 
-            <div class="caption">
-              <h3>Honey</h3>
-              <h5>穿搭达人</h5>
-              <p><a href="#" class="btn btn-primary" role="button"><span>+</span>关注</a> </p>
+                    </div>
+                </div>
+                <div class="col-sm-3" style="margin-top: 3%;">
+                    <div class="card" style="width:400px">
+                        <center>
+                            <img class="card-img-top" src="../Img/img_avatar.png" alt="Card image"
+                                style="width:50%;margin-top: 3%;"></center>
+                        <div class="card-body">
+                            <center>
+                                <h4 class="card-title">Honey</h4>
+                                <p class="card-text">穿搭达人</p>
+                                <a href="#" class="btn btn-primary">+关注</a>
+                            </center>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-          </div>
-    </div>
-    <div class="right">
-          <div class="thumbnail">
-            <img src="../Img/2.png" alt="...">
-            <div class="caption">
-                <h3>Honey</h3>
-                <h5>穿搭达人</h5>
-              <p><a href="#" class="btn btn-primary" role="button"><span>+</span>关注</a> </p>
-            </div>
-          </div>
-        </div>      
-  </div>
-  <div class="hr"></div>
-<!-- 中间 -->
-  <div class="Middle">
-			<div class="Middle-left">
-				<div style="float: left;">
-					<img src="../Img/honey-1.png"  alt="....." />
-				</div>
-				<div class="Middle-top">
-					<h6>Honey</h6>
-					<span>2小时前</span>
-				</div>
-				
-			</div>
-			<div class="Middle-right">
-				<div style="color: skyblue;">
-					<span>+</span>关注
-				</div>
-			</div>
-    </div>
-    <!-- 尾部 -->
-        
-    <div class="bottom">
-        <div class="jumbotron">
-           <img src="../Img/3.png" align="...." class="jumbotron-img"/>
-        </div>      
-          <span>"20th.Anniversary"周年纪念联名版即将发售</span>      
-        <div class="bottom-foon">
-          <span style="color: #1296db;">转发</span>
-          <!-- <a href="#">转发</a> -->
-          <div style="float: right;">
-            <span style="color: #1296db;">评论</span>
-            <!-- <a href="# ">评论</a> -->
-            <span ><img src="../Img/点赞.png" align="..." class="Give"></span>
-          </div>
+            <hr>
+            <!-- 用户发布消息 -->
+             <!-- 用户评论（照片） -->
+             <div class="row">
+                    <div class="col-sm-3" >
+                    <img style="width: 60%;height: 95%;" src="../Img/img_avatar.png" alt="">
+                                    
+                    </div>
+                    <div class="col-sm-3" style="margin-top: 3%;margin-left:-9%;" >                        
+                        <h5 >用户名</h5> 
+                        <p  class="text-muted">1小时前</p>               
+                        </div> 
+                    <div class="col-sm-2" style="margin-top: 3%;margin-left:-16%;" >                        
+                        <a href="#" class="btn btn-primary">+关注</a>               
+                        </div> 
+
+                  </div>
+                  <!-- 用户图片 -->
+                  <div class="row"style="margin-left: 2%;">
+                        <img src="../Img/轮3.jpg" alt="" style="height: 60%; width: 95%;border-radius: 20px;">
+                        <p style="padding-top: 10px;">"20th.Anniversary"周年纪念联名版本即将发售
+                            <br>
+                            <span style="color: blue;font-size: 12px;">转发</span>
+                            <span style="color: blue;font-size: 12px;float: right;">评论</span>
+                            <span style="color: blue;font-size: 12px;float: right;">
+                            
+                            </span>
+                   </div>
+                 </div>
+
+
         </div>
-      </div>
     </div>
-  <!-- </div> -->
-
-    <script src="../jquery/jquery-1.11.0.js"></script>
- 
-    <script src="../jquery/jquery-1.11.0.min.js"></script>   
 </body>
 
 </html>
+
+<style>
+    body {
+        background-color: #d3cbf8;
+    }
+
+    .container {
+        background-color: rgba(255, 205, 253, 0.9);
+    }
+
+    .container-fluid {
+        margin-top: -3%;
+    }
+</style>
